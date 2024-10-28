@@ -9,13 +9,15 @@ interface Props {
 }
 
 const PortefolioCard = ({ portefolioValue, onPortefolioDelete }: Props) => {
-  return (
-    <Card style={{ width: "10rem" }}>
+  /*
       <Card.Img
         className="mt-2"
         variant="top"
         src="/stock-images/stockDefault-pexels-weekendplayer-187041.jpg"
       />
+  */
+  return (
+    <Card style={{ width: "10rem" }}>
       <Link to={`/company/${portefolioValue}`}>
         <Card.Body>
           <Card.Title>{portefolioValue}</Card.Title>

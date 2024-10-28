@@ -27,12 +27,21 @@ const CompanyPage = () => {
     getProfileInit();
   }, [ticker]);
 
+  /* temporary remove side bar
+            <Col xs={12} sm={12} md={12} lg={9} xl={9} xxl={9}>
+            ...
+            <Col xs={0} sm={0} md={0} lg={3} xl={3} xxl={3}>
+              <SideBar />
+            </Col>
+  
+  */
+
   return (
     <>
       {company ? (
         <Container fluid className="mt-1 align-items-start m-auto">
           <Row>
-            <Col xs={12} sm={12} md={12} lg={9} xl={9} xxl={9}>
+            <Col>
               <CompanyDashboard
                 companyName={company.companyName}
                 ticker={ticker!}
@@ -49,9 +58,6 @@ const CompanyPage = () => {
                   subtitle={"$" + company.price.toString()}
                 />
               </CompanyDashboard>
-            </Col>
-            <Col xs={0} sm={0} md={0} lg={3} xl={3} xxl={3}>
-              <SideBar />
             </Col>
           </Row>
         </Container>

@@ -14,15 +14,17 @@ const StockCard: React.FC<Props> = ({
   searchResult,
   onPortfolioCreate,
 }: Props): JSX.Element => {
-  return (
-    <>
-      <Card style={{ width: "10rem" }}>
+  /*
         <Card.Img
           className="mt-2"
           variant="top"
           src="/stock-images/stockDefault-pexels-weekendplayer-187041.jpg"
         />
-        <Card.Body>
+  */
+  return (
+    <>
+      <Card style={{ width: "15rem" }}>
+        <Card.Body className="p-2">
           <Link to={`/company/${searchResult.symbol}`}>
             <Card.Title>
               {searchResult.name} ({searchResult.symbol})
@@ -32,12 +34,12 @@ const StockCard: React.FC<Props> = ({
         <ListGroup className="list-group-flush">
           <ListGroup.Item>{searchResult.currency}</ListGroup.Item>
         </ListGroup>
-        <Card.Body>
+        <Card.Body className="p-2">
           <Card.Text>
             {searchResult.exchangeShortName} - {searchResult.stockExchange}
           </Card.Text>
         </Card.Body>
-        <Card.Body className="pb-2">
+        <Card.Body className="p-2">
           <AddPortefolio
             symbol={searchResult.symbol}
             buttonText="Add"
