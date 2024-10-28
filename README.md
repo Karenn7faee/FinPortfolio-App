@@ -29,3 +29,17 @@ Like any Vite-react app, after pulling project to run locally :
 Teddy Smith's youtube tutorial
 
 Any feedback is appreciated.
+
+## Project Images
+
+> - Landing page
+>
+>   ![Landing page picture](https://github.com/Karenn7faee/FinPortfolio-App/blob/main/images/FinShark_index.png?raw=true)
+>
+> - Search and portfolio page
+>
+>   ![Search and portfolio page picture](https://github.com/Karenn7faee/FinPortfolio-App/blob/main/images/FinShark_search.png?raw=true)
+>
+> - Company details page
+>
+>   ![Company details page picture](https://github.com/Karenn7faee/FinPortfolio-App/blob/main/images/FinShark_company.png?raw=true)
